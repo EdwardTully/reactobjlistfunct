@@ -1,0 +1,27 @@
+.flist{
+    height: 350px;
+   
+    width: 301px;
+    border: 1px solid black;
+    margin: 20px 10px;
+    background: rgb(240, 226, 145);
+   
+}
+.flist h1{
+    font-size: 25px;
+    background: white;
+    border-bottom: 1px solid black;
+    padding: 20px;
+    margin: 0;
+}
+.fcontact{
+    list-style-type: none;
+    
+}
+
+li {
+    font-size: 20px;
+    margin-left: 20px;
+    
+
+}

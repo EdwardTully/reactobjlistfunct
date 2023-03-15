@@ -1,23 +1,39 @@
-import logo from './logo.svg';
+import React,{useState} from 'react'
+import FacForm from './components/Facform/FacForm';
+import ListContainer from './components/ListContainer/ListContainer'
 import './App.css';
 
 function App() {
+
+  const [members, setMembers]=useState([
+    {
+      name: 'Natalie Tully',
+      phone: 'Unlisted',
+      activity: 'Tennis, Soccer',
+      nickname: 'NatBat',
+      location: 'Thrasher',
+      major: 'Primary Education'
+    },
+    {
+      name: 'William Tully',
+      phone: 'Unlisted',
+      activity: 'Hunting, Fishing, Cars',
+      nickname: 'Willy',
+      location: 'Squad Bay 2',
+      major: 'Criminal Justice'
+    }
+  ])
+
+  const addMember = (member)=>{
+    setMembers(prev => [member, ...prev])
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+       <ListContainer members = {members}/>
+       <FacForm addMember = {addMember}/>
+    
     </div>
   );
 }

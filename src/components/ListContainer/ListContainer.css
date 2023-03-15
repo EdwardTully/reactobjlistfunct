@@ -1,0 +1,12 @@
+.table{
+    width: 85%;
+    height:auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: cornflowerblue;
+    border: 2px solid black;
+    margin: auto;
+    
+
+}
