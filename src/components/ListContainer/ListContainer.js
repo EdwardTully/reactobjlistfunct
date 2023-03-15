@@ -9,7 +9,7 @@ function ListContainer(props) {
 
           {props.members && props.members.map((member)=>{
           return <FlistItem  name={member.name} phone={member.phone} activity = {member.activity} nickname={member.nickname} location={member.location} major={member.major}
-           key={member}/>          
+           key={member.name}/>          
           })}
        
      </div>

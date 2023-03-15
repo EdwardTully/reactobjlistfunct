@@ -41,8 +41,8 @@ function FacForm(props) {
   
     const handleSubmit=(event)=>{
       event.preventDefault()
-       
-        let member ={
+        
+        let member = {
             name: name,
             phone: phone,
             activity: activity,
@@ -50,9 +50,9 @@ function FacForm(props) {
             location: location,
             major: major
         }
-        props.addMember(member)
-    }
-    
+        name ? props.addMember(member):alert('Add Member Name To Submit')
+    } 
+  
    
 
   return (
