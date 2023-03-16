@@ -133,7 +133,7 @@ function App() {
   ])
 
   const addMember = (member)=>{
-    setMembers(prev => [member, ...prev])
+    setMembers(prev => [...prev, member])
   }
 
   return (

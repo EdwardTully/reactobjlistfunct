@@ -3,9 +3,9 @@
 
 
 #formContainer{
-    position: fixed;
-    top: 0;
-    right: 0;
+    position:fixed;
+    top: 78px;
+    right: 50px;
     padding: 20px;
     margin: auto;
     margin-top: 25px;
