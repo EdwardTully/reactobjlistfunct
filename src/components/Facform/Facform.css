@@ -1,11 +1,33 @@
-form{
-  
+
+
+
+
+#formContainer{
+    position: fixed;
+    top: 0;
+    right: 0;
     padding: 20px;
-    margin-left: 120px;
-    
-    width: 502px;
-    height: 300px;
+    margin: auto;
+    margin-top: 25px;
+    background: rgb(226, 234, 247);
+    color: black;
+    font-size: 22px;
+    width: 400px;
+    height: 270px;
     border: 1px solid black;
+}
+form{
+    width: 300px;
+   
+    position: relative;
+    left: 20px;
+    top: 25px;
+    text-align: left;
+}
+button{
+    height: 40px;
+    width: 90px;
+    margin-left: 40%;
 }
 label{
     margin-left: 0;

@@ -56,28 +56,28 @@ function FacForm(props) {
    
 
   return (
-    <div>     
-         <div>
+         
+         <div id='formContainer'>
     <form onSubmit={handleSubmit}>
           <label> Name: </label>
-          <input  onChange={addName} type='text'/><br/><br/>
+          <input  onChange={addName} type='text'/><br/>
           <label> Phone: </label>
-          <input  onChange={addPhone} type='text'/><br/><br/>
+          <input  onChange={addPhone} type='text'/><br/>
           <label> Activity: </label>
-          <input  onChange={addActivity} type='text'/><br/><br/>
+          <input  onChange={addActivity} type='text'/><br/>
           <label> Nickname: </label>
-          <input  onChange={addNickname} type='text'/><br/><br/>
+          <input  onChange={addNickname} type='text'/><br/>
           <label> Location: </label>
-          <input  onChange={addLocation} type='text'/><br/><br/>
+          <input  onChange={addLocation} type='text'/><br/>
           <label> Major: </label>
-          <input  onChange={addMajor} type='text'/><br/><br/>
+          <input  onChange={addMajor} type='text'/><br/>
           
           <br/>
-          <br/>
+          
           <button type='submit' >ENTER</button>
     </form>
     </div>
-    </div>
+    
   )
 }
 

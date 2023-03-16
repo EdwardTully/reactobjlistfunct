@@ -7,9 +7,9 @@ function FlistItem(props) {
 
  <div className = 'flist'>
 
-           <h1>Faculty and Staff:</h1>
+           <h1 id='nameHead'>{`Member ${props.name}`}</h1>
 
-            <ul className = 'fcontact'>
+            <ul className = 'infoList'>
                 <li>Name: {props.name}</li>
                 <li>Phone: {props.phone}</li>
                 <li>Activity: {props.activity}</li>
