@@ -1,6 +1,8 @@
 import React,{useState} from 'react'
 import FacForm from './components/Facform/FacForm';
 import ListContainer from './components/ListContainer/ListContainer'
+import TeachForm from './components/TeachForm/TeachForm'
+import TeachContainer from './components/TeachContainer/TeachContainer'
 import './App.css';
 
 function App() {
@@ -13,135 +15,34 @@ function App() {
       nickname: 'NatBat',
       location: 'Thrasher',
       major: 'Primary Education'
-    },
-    {
-      name: 'William Tully',
-      phone: 'Unlisted',
-      activity: 'Hunting, Fishing, Cars',
-      nickname: 'Willy',
-      location: 'Squad Bay 2',
-      major: 'Criminal Justice'
-    },
-    {
-      name: 'William Tully',
-      phone: 'Unlisted',
-      activity: 'Hunting, Fishing, Cars',
-      nickname: 'Willy',
-      location: 'Squad Bay 2',
-      major: 'Criminal Justice'
-    },
-    {
-      name: 'William Tully',
-      phone: 'Unlisted',
-      activity: 'Hunting, Fishing, Cars',
-      nickname: 'Willy',
-      location: 'Squad Bay 2',
-      major: 'Criminal Justice'
-    },
-    {
-      name: 'William Tully',
-      phone: 'Unlisted',
-      activity: 'Hunting, Fishing, Cars',
-      nickname: 'Willy',
-      location: 'Squad Bay 2',
-      major: 'Criminal Justice'
-    },
-    {
-      name: 'William Tully',
-      phone: 'Unlisted',
-      activity: 'Hunting, Fishing, Cars',
-      nickname: 'Willy',
-      location: 'Squad Bay 2',
-      major: 'Criminal Justice'
-    },
-    {
-      name: 'William Tully',
-      phone: 'Unlisted',
-      activity: 'Hunting, Fishing, Cars',
-      nickname: 'Willy',
-      location: 'Squad Bay 2',
-      major: 'Criminal Justice'
-    },
-    {
-      name: 'William Tully',
-      phone: 'Unlisted',
-      activity: 'Hunting, Fishing, Cars',
-      nickname: 'Willy',
-      location: 'Squad Bay 2',
-      major: 'Criminal Justice'
-    },
-    {
-      name: 'Jessic Tully',
-      phone: '804-555-5555',
-      activity: 'Soccer, Beachgoing',
-      nickname: 'Jess',
-      location: 'Room 4',
-      major: 'OT'
-    },
-    {
-      name: 'Jessic Tully',
-      phone: '804-555-5555',
-      activity: 'Soccer, Beachgoing',
-      nickname: 'Jess',
-      location: 'Room 4',
-      major: 'OT'
-    },
-    {
-      name: 'Jessic Tully',
-      phone: '804-555-5555',
-      activity: 'Soccer, Beachgoing',
-      nickname: 'Jess',
-      location: 'Room 4',
-      major: 'OT'
-    },
-    {
-      name: 'Jessic Tully',
-      phone: '804-555-5555',
-      activity: 'Soccer, Beachgoing',
-      nickname: 'Jess',
-      location: 'Room 4',
-      major: 'OT'
-    },{
-      name: 'Natalie Tully',
-      phone: 'Unlisted',
-      activity: 'Tennis, Soccer',
-      nickname: 'NatBat',
-      location: 'Thrasher',
-      major: 'Primary Education'
-    },{
-      name: 'Natalie Tully',
-      phone: 'Unlisted',
-      activity: 'Tennis, Soccer',
-      nickname: 'NatBat',
-      location: 'Thrasher',
-      major: 'Primary Education'
-    },{
-      name: 'Natalie Tully',
-      phone: 'Unlisted',
-      activity: 'Tennis, Soccer',
-      nickname: 'NatBat',
-      location: 'Thrasher',
-      major: 'Primary Education'
-    },{
-      name: 'Natalie Tully',
-      phone: 'Unlisted',
-      activity: 'Tennis, Soccer',
-      nickname: 'NatBat',
-      location: 'Thrasher',
-      major: 'Primary Education'
     }
-  ])
+    ])
+  const [teachers, setTeachers]=useState([{
+      name: 'Severious Snape',
+      phone: 'Unlisted',
+      hours: 'rsvp',
+      hobby: 'Skiing',
+      almaMater: 'Hogwarts',
+      department: 'potions'
+  }])
 
   const addMember = (member)=>{
-    setMembers(prev => [...prev, member])
+    setMembers(prev => [member,...prev])
+  }
+  const addTeacher = (teacher)=>{
+    setTeachers(prev => [teacher,...prev])
   }
 
   return (
     <div className="App">
-        <h1>Club Member Information</h1>
+        <h1> Member Information</h1>
        <ListContainer members = {members}/>
-       <FacForm addMember = {addMember}/>
-    
+       <TeachContainer teachers = {teachers} />
+       <div className='formcnt'>
+         <FacForm addMember = {addMember}/>
+      <TeachForm addTeacher = {addTeacher}/>
+      </div>
+     
     </div>
   );
 }

@@ -1,11 +1,6 @@
 
-
-
-
-#formContainer{
-   
- 
- 
+#formContainerT{
+  
     background: rgb(226, 234, 247);
     color: black;
     font-size: 22px;
@@ -13,7 +8,7 @@
     height: 270px;
     border: 1px solid black;
 }
-form{
+.teachForm {
     width: 300px;
    
     position: relative;

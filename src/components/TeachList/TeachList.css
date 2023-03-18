@@ -1,0 +1,32 @@
+.tlist{
+    height: 300px;
+    padding: 0px;
+    width: 300px;
+    border: 1px solid black;
+    margin: 20px 10px;
+    background: rgb(43, 36, 239);
+   
+}
+#tnameHead{
+    font-size: 23px;
+    color: rgb(27, 27, 122);
+    
+    background: rgb(164, 193, 234);
+    border-bottom: 1px solid black;
+    padding: 20px;
+    margin: 0;
+}
+.tinfoList{
+    list-style-type: none;
+    margin: 0px;
+    color: whitesmoke;
+   
+    font-style: italic;
+    font-weight: 600;
+    padding: 0px;
+    width: 250px;
+    text-align: left;
+    position: relative;
+    left: 10px;
+    top: 15px;
+}
